@@ -138,7 +138,7 @@ const TokensTable = () => {
     let defaultUrl;
   
     if (chatLink) {
-      defaultUrl = chatLink + `/#/?settings={"key":"sk-${key}"},"url":"${serverAddress}"`;
+      defaultUrl = chatLink + `/#/?settings={"key":"sk-${key}","url":"${serverAddress}"}`;
     } else {
       defaultUrl = `https://chat.oneapi.pro/#/?settings={"key":"sk-${key}","url":"${serverAddress}"}`;
     }
@@ -356,7 +356,7 @@ const TokensTable = () => {
                             }}>
                             聊天
                           </Button>
-                          <Dropdown   
+                          {/* <Dropdown   
                             className="button icon"       
                             floating
                             options={OPEN_LINK_OPTIONS.map(option => ({
@@ -366,7 +366,7 @@ const TokensTable = () => {
                               }
                             }))}       
                             trigger={<></>}   
-                          />
+                          /> */}{/*移除下拉列表（未接入其他API，暂时移除）*/}
                       </Button.Group>
                       {' '}
                       <Popup
