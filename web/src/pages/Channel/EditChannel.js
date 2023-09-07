@@ -42,7 +42,7 @@ const EditChannel = () => {
     other: '',
     model_mapping: '',
     models: [],
-    groups: ['default']
+    groups: ['user']
   };
   const [batch, setBatch] = useState(false);
   const [inputs, setInputs] = useState(originInputs);
