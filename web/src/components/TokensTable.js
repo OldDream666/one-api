@@ -8,13 +8,13 @@ import { renderQuota } from '../helpers/render';
 
 const COPY_OPTIONS = [
   { key: 'next', text: 'ChatGPT Next Web', value: 'next' },
-  // { key: 'ama', text: 'AMA 问天', value: 'ama' },
-  // { key: 'opencat', text: 'OpenCat', value: 'opencat' },
+  { key: 'ama', text: 'AMA 问天', value: 'ama' },
+  { key: 'opencat', text: 'OpenCat', value: 'opencat' },
 ];
 
 const OPEN_LINK_OPTIONS = [
-  // { key: 'ama', text: 'AMA 问天', value: 'ama' },
-  // { key: 'opencat', text: 'OpenCat', value: 'opencat' },
+  { key: 'ama', text: 'AMA 问天', value: 'ama' },
+  { key: 'opencat', text: 'OpenCat', value: 'opencat' },
 ];
 
 function renderTimestamp(timestamp) {
@@ -356,7 +356,7 @@ const TokensTable = () => {
                             }}>
                             聊天
                           </Button>
-                          {/* <Dropdown   
+                          <Dropdown   
                             className="button icon"       
                             floating
                             options={OPEN_LINK_OPTIONS.map(option => ({
@@ -366,7 +366,7 @@ const TokensTable = () => {
                               }
                             }))}       
                             trigger={<></>}   
-                          /> */}{/*移除下拉列表（未接入其他API，暂时移除）*/}
+                          />
                       </Button.Group>
                       {' '}
                       <Popup
